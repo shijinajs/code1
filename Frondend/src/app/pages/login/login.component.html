@@ -1,0 +1,19 @@
+<div class="content ">
+    <div class="container cont1"></div>
+    <div class="container cont2">
+      <form [formGroup]="loginForm" (ngSubmit)="login()" class="form-group">
+        <label for="exampleInputEmail1"  >Email address</label><br>
+        <input type="email" placeholder="Enter email" formControlName="email" class="field">
+      <br>
+  
+       <label for="exampleInputPassword1" >Password</label>
+        <br>
+        <input type="password" placeholder="password" formControlName="password" class="field">
+     <br>
+      <button type="submit"  class="btn btn-primary">Login</button><br>
+      <a>no account please signup</a>
+    </form> 
+</div>
+</div>
+        
+

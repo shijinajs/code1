@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&display=swap');
+
+*{
+    font-family: 'Gentium Plus', serif; user-select: none;
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+    min-height: 100vh; width: 100%;
+    background: linear-gradient(35deg, #F9F9F9 50%, #CDF0EA  50%);
+    display: flex; 
+    align-items: center; justify-content: center;
+}
+.content{
+    background-color: white; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 75px;
+    width: 100%; min-height: 600px; box-shadow: 0 0 10px 10px rgba(0,0,0,0.05);
+}
+.cont1{
+    border-radius: 10px;
+    width:520px; height: 600px;
+    background-image: url("https://cdn.pixabay.com/photo/2021/09/15/11/44/insect-6626635__340.jpg");
+    background-position: center; background-repeat: no-repeat;
+    background-size: cover;
+}
+.cont2{
+    width: 520px; height: 300px; display: flex; align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.form-group{
+    width:360px;
+    line-height:35px;
+    color: #dc3545
+}
+.field{
+    width:300px;
+}
+.btn{
+   background-color: #dc3545; 
+   border-color: #dc3545;
+   margin-left: 99px;
+   margin-top: 16px;
+   width: 100px;
+}
+@media only screen and (max-width: 900px) {
+    .content{
+        flex-direction: column;
+    }
+    .container{
+        width: 350px;
+    }
+    .cont1{
+        height: 300px;
+    }
+}

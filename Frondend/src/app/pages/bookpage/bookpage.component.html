@@ -1,0 +1,31 @@
+<div class="container pl-5">
+    <div class="division">
+        <button routerLink="add" type="button" class="btn btn-danger">Add New Book</button>&nbsp;&nbsp; 
+        <button routerLink="" type="button" class="btn btn-danger">Log Out</button>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Content</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <tr *ngFor="let student of students,let i=index">
+              <th scope="row">{{i+1}}</th>
+              <td>{{student.title}}</td>
+              <td>{{student.author}}</td>
+              <td>{{student.content}}</td>
+              <td>{{student.price}}</td>
+              <td>
+                <button routerLink="edit" type="button" (click)="getsingledata(student._id)" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Edit</button>&nbsp;&nbsp;
+                <button type="button" (click)="deletedata(student._id)" class="btn btn-danger btn-sm">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
